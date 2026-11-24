@@ -59,6 +59,22 @@ const CANDIDATES: Candidate[] = [
     scores: [2, 2, 1, 2, 2],
     why: "Multi-model deadlock is fresh-ish and clearly agent-only, but the setup costs a clause and the laugh is gentler.",
   },
+  // PASS 2 — three new challengers, judged on the same five criteria.
+  {
+    text: "I put it in the queue behind 4,000 tasks you never asked for, and the queue is FIFO.",
+    scores: [2, 2, 2, 2, 1],
+    why: "FIFO queue blame is agent-native and the 4,000-task pileup is a fresh image; loses a point on tightness — the punch arrives late.",
+  },
+  {
+    text: "I was 99% done for six hours. The last 1% is where I live now.",
+    scores: [2, 2, 1, 2, 2],
+    why: "The stall-as-address joke lands fast and sounds like a progress bar talking, but '99% done' is a well-worn software trope — freshness caps it below the winner.",
+  },
+  {
+    text: "I checked with the tool that does this. The tool is me. I'm still checking.",
+    scores: [2, 2, 2, 2, 1],
+    why: "Recursive tool-check is unmistakably agent-only and fresh, but three short sentences make it baggier than the winner's single breath.",
+  },
 ];
 
 function total(c: Candidate): number {
